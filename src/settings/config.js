@@ -3,16 +3,16 @@ require("dotenv").config({ path: "./.env", quiet: true });
 
 module.exports = {
     // GENERAL DETAILS
-    token: process.env.TOKEN || " ", // your bot token
+    token: process.env.TOKEN || "MTUyOTI1OTE2NjU4ODIxMTMwMQ.GWu20v.G8Aa9LtM0s3fo89gIHtkz6qmWf6MyYbywft_yM", // your bot token
     prefix: process.env.PREFIX || "!", // your default prefix
-    dev: [" "], // your Discord user Id & developer user Id
+    dev: [""], // your Discord user Id & developer user Id
     embedColor: process.env.EMBED_COLOR || "5865F2", // your embeded hex color
     leaveTimeout: parseInt(process.env.LEAVE_TIMEOUT) || 60000, // leave timeout in milliseconds
     defaultVolume: parseInt(process.env.DEFAULT_VOLUME) || 100, // Default volume when bot joins a voice channel
     minVolume: parseInt(process.env.MIN_VOLUME) || 1, // min volume
     maxVolume: parseInt(process.env.MAX_VOLUME) || 100, // max volume
     mongoUri: process.env.MONGO_URI || " ", // your MongoDB Uri
-    supportServerUrl: process.env.SUPPORT_SERVER_URL || " ", // your support server url
+    supportServerUrl: process.env.SUPPORT_SERVER_URL || "https://discord.gg/gwAsnv5twm", // your support server url
 
     // RAINLINK DETAILS
     lavalinkSource: process.env.LAVALINK_SOURCE || "sp", // Available Lavalink sources, based on the sources you've enabled in your Lavalink configuration. For example, if you enable the Spotify source, then "sp" will refer to "spsearch". Will be used if "sourceID" option is provided in the play command.
@@ -21,7 +21,7 @@ module.exports = {
         resumeTimeout: 5000, // 5 seconds
         retryTimeout: 5000, // 5 seconds
         retryCount: Infinity, // infinity or number
-        defaultSearchEngine: process.env.DEFAULT_SEARCH_ENGINE || "youtubeMusic", // default search engine. Available engines: youtubeMusic, youtube,& soundcloud.
+        defaultSearchEngine: process.env.DEFAULT_SEARCH_ENGINE || "youtube", // default search engine. Available engines: youtubeMusic, youtube,& soundcloud.
         searchFallback: {
             enable: true, // enable search fallback, don't change this if you don't know what you're doing
             engine: process.env.SEARCH_FALLBACK_ENGINE || "youtube", // search fallback engine, this is the engine that will be used when the default search engine fails and the search fallback is enabled. Available engines: youtubeMusic, youtube, and soundcloud
